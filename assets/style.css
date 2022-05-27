@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(background.png) center center no-repeat fixed;
+  background-size: cover;
+}
+
+.clock {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(255, 255, 255, 0.048);
+  border-radius: 50%;
+
+  left: 50%;
+  box-shadow: 5px 8px 20px 1px rgb(0 0 0 / 25%), inset 2px 2px 4px 0px #ffffff40;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  backdrop-filter: blur(20px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+img {
+  opacity: 0.4;
+}
+
+.hr {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 7px;
+  border-radius: 5px;
+  background: aliceblue;
+  opacity: 0.4;
+  top: 31%;
+  left: calc(50% - 3px);
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.min {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 5px;
+  border-radius: 5px;
+  background: aliceblue;
+  opacity: 0.4;
+  top: 25%;
+  left: calc(50% - 2px);
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.sec {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 3px;
+  border-radius: 5px;
+  background: aliceblue;
+  opacity: 0.4;
+  top: 13%;
+  left: calc(50% - 1px);
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.time {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  opacity: 0.7;
+  width: fit-content;
+  color: wheat;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.time div {
+  display: inline;
+}
